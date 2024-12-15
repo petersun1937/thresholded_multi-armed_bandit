@@ -1,0 +1,22 @@
+1) Run the attached Matlab script. You will have two files as the output:
+  - CCDF.fig: This is the CCDF plot of all three channel rates
+  - threshold.mat: This is the Matlab file that saves 100,000 channel rate instances for the three channels
+
+2) From the plot/data, we can see that:
+  - when $c_t$ is in [4.3, 5.1], channel 3 is optimal
+  - when $c_t$ is in [5.1, 6.4], channel 2 is optimal
+  - when $c_t$ is in [6.4, 8.3], channel 1 is optimal
+
+3) We test three cases of the distribution of $c_t$. Note that you will need to write the code that generates $c_t$ based on these distributions separately.
+  - Case 1: $c_t$ is uniform in {4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8}. In this case, when $c_t$ is either 4.5 or 5, CH 3 is optimal; when $c_t$ is either 5.5 or 6, CH 2 is optimal; otherwise CH 1 is optimal.
+  - Case 2: $c_t$ is uniform in {5.5, 6, 6.5, 7, 7.5, 8}. In this case, when $c_t$ is either 5.5 or 6, CH 2 is optimal; otherwise CH 1 is optimal. CH 3 will never be optimal.
+  - Case 3: $c_t$ is uniform in {6.5, 7, 7.5, 8}. In this case, CH 1 is always optimal.
+
+Case 1: [6.4, 7.2, 8, 8.8, 9.6, 10.4, 11.2, 12]
+Case 2: [8, 8.8, 9.6, 10.4, 11.2, 12]
+Case 3: [9.6, 10.4, 11.2, 12]
+
+
+For each of these case, generate 100,000 $c_t$, and run T-UCB and T-UCB-C using these samples of $c_t$ as well as the 100,000 realized channel rates for all three channels in threshold.mat. Compute and save R(t), for t=1 to 100,000.
+
+4) The above step 1) to step 3) count as one run. Repeat these three steps for 500 times, and then average. Also plot the confidence interval.

@@ -9,7 +9,7 @@ The problem is formulated within the **multi-armed bandit (MAB) framework**, whe
 For more details on the theoretical background, problem formulation, and proposed algorithms, refer to the following research papers:
 
 1. **Threshold Bandits for Dynamic Spectrum Access with Rateless Codes**
-   [Read the Paper](https://drive.google.com/file/d/1RLtM0fTCTSOCm-KpcWz7kTHarvf8Hvwk/view?usp=drive_link)
+   [Read the Paper](http://www.ee.psu.edu/yang/pub/icc2023full.pdf)
 
 2. **UCB-based Learning Algorithm on Threshold Bandits for Dynamic Spectrum Access with Rateless Codes**
    [Read the Paper](https://drive.google.com/file/d/1KHSXthbfy97gNyYsYIC8DBFCmjNlF-YI/view?usp=drive_link)
